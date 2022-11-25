@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/RPI_2/static/css/main.768890e3.css",
+    "main.js": "/RPI_2/static/js/main.16a20c50.js",
+    "static/media/me.jpg": "/RPI_2/static/media/me.97d9076b3212dcaa90f1.jpg",
+    "static/media/SourceSansPro-Regular.ttf": "/RPI_2/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
+    "static/media/SourceSansPro-Black.ttf": "/RPI_2/static/media/SourceSansPro-Black.3633cc84b6efe1f1515e.ttf",
+    "static/media/SourceSansPro-Bold.ttf": "/RPI_2/static/media/SourceSansPro-Bold.2dec2f24e3bdf2c6862e.ttf",
+    "index.html": "/RPI_2/index.html",
+    "main.768890e3.css.map": "/RPI_2/static/css/main.768890e3.css.map",
+    "main.16a20c50.js.map": "/RPI_2/static/js/main.16a20c50.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.768890e3.css",
+    "static/js/main.16a20c50.js"
+  ]
+}
