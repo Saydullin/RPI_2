@@ -1,10 +1,14 @@
-import { Poet } from "../../components/poet/Poet"
+import { PreviewPoet } from "../../components/poet/PreviewPoet"
 import { poets } from "../../data/ru/poetsData"
+import { Link } from "react-router-dom"
 import {
     BoldTitle,
     Container,
+    Flex,
     Section,
-    Space
+    Title,
+    Space,
+    SubTitle
 } from "../../styles/Styles"
 
 function DailySubject() {
@@ -12,11 +16,17 @@ function DailySubject() {
     const poetsList = poets
 
     return (
-        <Section isFullScreen={true}>
+        <Section className={"h"} isFullScreen={false} isPadding={true}>
             <Container>
                 <BoldTitle>Poet of the day</BoldTitle>
                 <Space width={0} height={40} />
-                <Poet poet={poetsList[0]} isPreview={true} />
+                <PreviewPoet id={0} poet={poetsList[0]} />
+                <Space width={0} height={40} />
+                <Flex isColumn={false} position={"center"}>
+                    <Link to={"/poet/0"}>
+                        <SubTitle className="l_color">Read more</SubTitle>
+                    </Link>
+                </Flex>
             </Container>
         </Section>
     )

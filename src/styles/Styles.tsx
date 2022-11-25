@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const Text = styled("div")`
-    line-height: 28px;
     font-family: var(--regular_font);
     color: var(--text_color);
 `
@@ -11,21 +10,24 @@ const Container = styled("div")`
     width: 100%;
     padding: 20px;
     margin: 0 auto;
+    height: 100%;
 `
 
-const Section = styled("div")<{isFullScreen: boolean}>`
-    min-height: ${props => (props.isFullScreen ? "50vh" : "inherit")}
+const Section = styled("div")<
+    {
+        isFullScreen: boolean,
+        isPadding: boolean
+    }>`
+    min-height: ${props => (props.isFullScreen ? "100vh" : "inherit")};
+    padding: ${props => (props.isPadding ? "20px" : "0px ")};
+    animation: fade-in .3s ease-in-out;
 `
 
 const BigIcon = styled("img")`
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     max-width: 100%;
     object-fit: cover;
-`
-
-const Icon = styled("img")`
-
 `
 
 const Space = styled("div")<{width: number, height: number}>`
@@ -42,12 +44,12 @@ const BoldTitle = styled("div")`
 
 const Flex = styled("div")<{
     isColumn: boolean,
-    isStart: boolean
+    position: string,
 }>`
     display: flex;
-    align-items: ${props => (props.isStart ? "start" : "center")};
+    align-items: center;
+    justify-content: ${props => (props.position || "center")};
     flex-direction: ${props => (props.isColumn ? "column" : "row")};
-
 `
 
 const Links = styled("div")<{space: number}>`
@@ -65,17 +67,21 @@ const Input = styled("input")<{isOpen: boolean}>`
     width: ${props => (props.isOpen ? "300px" : "0px")};
 `
 
-const PoetPicture = styled("img")`
+const Picture = styled("img")`
     width: 250px;
     height: 250px;
     border-radius: 50%;
 `
 
-const PoetTitle = styled(Text)`
+const Title = styled(Text)`
     font-size: var(--font_size_big);
 `
 
-const PoetSubTitle = styled(Text)`
+const PoetTitleLink = styled("a")`
+
+`
+
+const SubTitle = styled(Text)`
     font-size: var(--font_size_medium);
 `
 
@@ -84,14 +90,14 @@ export {
     Section,
     Flex,
     BigIcon,
-    Icon,
     BoldTitle,
     Links,
     Space,
     Input,
-    PoetPicture,
-    PoetTitle,
-    PoetSubTitle
+    Picture,
+    Title,
+    PoetTitleLink,
+    SubTitle
 }
 
 

@@ -1,21 +1,25 @@
 import PoetType from "../../data/types/PoetType"
+import { Link } from "react-router-dom"
 import {
     Flex, 
     SubTitle, 
-    PoetTitleLink, 
+    Title,
     Space 
 } from "../../styles/Styles"
 
 interface PoetProps {
-    poet: PoetType
+    id: number,
+    poet: PoetType,
 }
 
-function PoetInfo({ poet }: PoetProps) {
+function PreviewPoetInfo({ id, poet }: PoetProps) {
 
     return (
         <Flex isColumn={true} position={"center"}>
             <Space height={20} width={0} />
-            <PoetTitleLink>{poet.name}</PoetTitleLink>
+            <Link to={"/poet/" + id}>
+                <Title className="l_color">{poet.name}</Title>
+            </Link>
             <Space height={10} width={0} />
             <SubTitle>{poet.years.birth} - {poet.years.death}</SubTitle>
             <Space height={20} width={0} />
@@ -25,7 +29,7 @@ function PoetInfo({ poet }: PoetProps) {
 }
 
 export {
-    PoetInfo
+    PreviewPoetInfo
 }
 
 

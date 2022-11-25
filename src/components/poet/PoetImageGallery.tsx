@@ -15,11 +15,11 @@ function PoetImageGallery({ gallery }: PoetGalleryProps) {
             showStatus={false}
             showThumbs={false}
             emulateTouch={true}
-            autoPlay={true}
+            autoPlay={false}
             infiniteLoop={true}
             interval={2500}
             transitionTime={1000}
-            className="rounded cp shadow"
+            className="rounded cp"
             width={400}>
                 {
                     gallery.map(({ src, alt }) => {

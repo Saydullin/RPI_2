@@ -1,23 +1,27 @@
 import {
+    NavigationLinks
+} from "../widgets/NavigationLinks"
+import { Link } from "react-router-dom"
+import logo from "../assets/img/feather.png"
+import {
     Container,
     Flex,
     BigIcon,
-    BoldTitle
+    BoldTitle,
+    Space
 } from "../styles/Styles"
-import {
-    NavigationLinks
-} from "../widgets/NavigationLinks"
 
 function Header() {
     return (
         <header className="header dflex">
-            <Container className="dflex">
-                <Flex isColumn={false} isStart={false}>
-                    <BigIcon src="img/feather.png" alt="logo" />
-                    <BoldTitle>Wiki Poets</BoldTitle>
+            <Link to="/">
+                <Flex isColumn={false} position="center">
+                    <BigIcon src={logo} alt="logo" />
+                    <Space width={10} height={0} />
+                    <BoldTitle className="t-color">Wiki Poets</BoldTitle>
                 </Flex>
-                <NavigationLinks className="move_right" />
-            </Container>
+            </Link>
+            <NavigationLinks className="move_right" />
         </header>
     )
 }
