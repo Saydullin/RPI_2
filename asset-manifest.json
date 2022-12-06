@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/saydullin.github.io/RPI_2/static/css/main.eccd0151.css",
+    "main.js": "/saydullin.github.io/RPI_2/static/js/main.9e1115ee.js",
+    "static/media/me.jpg": "/saydullin.github.io/RPI_2/static/media/me.97d9076b3212dcaa90f1.jpg",
+    "static/media/SourceSansPro-Regular.ttf": "/saydullin.github.io/RPI_2/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
+    "static/media/SourceSansPro-Black.ttf": "/saydullin.github.io/RPI_2/static/media/SourceSansPro-Black.3633cc84b6efe1f1515e.ttf",
+    "static/media/SourceSansPro-Bold.ttf": "/saydullin.github.io/RPI_2/static/media/SourceSansPro-Bold.2dec2f24e3bdf2c6862e.ttf",
+    "index.html": "/saydullin.github.io/RPI_2/index.html",
+    "static/media/search.svg": "/saydullin.github.io/RPI_2/static/media/search.4521d33270ab896d9ae3740c779db900.svg",
+    "main.eccd0151.css.map": "/saydullin.github.io/RPI_2/static/css/main.eccd0151.css.map",
+    "main.9e1115ee.js.map": "/saydullin.github.io/RPI_2/static/js/main.9e1115ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eccd0151.css",
+    "static/js/main.9e1115ee.js"
+  ]
+}
