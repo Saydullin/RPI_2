@@ -13,7 +13,7 @@ function PoetPage() {
     const selectedPoet: PoetType = poets.find(item => item.id == parseInt(poetId || "0")) || poets[0]
 
     return (
-        <Container>
+        <Container className="in-right">
             <Header />
             <Poet poet={selectedPoet} />
         </Container>

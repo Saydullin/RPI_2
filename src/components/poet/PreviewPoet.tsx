@@ -15,7 +15,7 @@ function PreviewPoet({ id, poet }: PoetProps) {
 
     return (
         <Flex isColumn={true} position={"center"}>
-            <PoetImageGallery gallery={poet.images} />
+            <PoetImageGallery isFull={false} gallery={poet.images} />
             <PreviewPoetInfo id={id} poet={poet} />
         </Flex>
     )

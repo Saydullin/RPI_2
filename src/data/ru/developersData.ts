@@ -16,10 +16,10 @@ const developersData: {
     {
         id: 0,
         name: "Saydullin",
-        lastName: "Sady",
+        lastName: "",
         description: "BSUIR Student, 2 course",
         githubLink: "https://github.com/Saydullin",
-        yearsOld: "20 years old",
+        yearsOld: "20 лет",
         profileImage: {
             src: SaydullinPicture,
             alt: "Saydullin"
@@ -27,11 +27,11 @@ const developersData: {
     },
     {
         id: 1,
-        name: "Pavel",
-        lastName: "Romanko",
+        name: "Павел",
+        lastName: "Романко",
         description: "BSUIR Student, 2 course",
-        githubLink: "https://github.com/Saydullin",
-        yearsOld: "19 years old",
+        githubLink: "https://github.com/PavelRomanko",
+        yearsOld: "19 лет",
         profileImage: {
             src: PavelPicture,
             alt: "Pavel"

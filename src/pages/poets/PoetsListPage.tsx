@@ -14,13 +14,18 @@ import {
 function PoetsListPage() {
     const [poetsList, setPoets] = useState<PoetType[]>(poets)
 
+    const onSearch = (searchText: string) => {
+        const filteredPoets = poets.filter(({ name }) => name.includes(searchText))
+        setPoets(filteredPoets)
+    }
+
     return (
-        <Container>
+        <Container className="in-left">
             <Header />
             <Space width={0} height={20} />
             <Flex isColumn={false} position={"space-between"} style={{padding: "10px"}} className="h rounded">
                 <Title>Poets List</Title>
-                <SearchWidget placeholder="Search poet" />
+                <SearchWidget onEdit={onSearch} placeholder="Search poet" />
             </Flex>
             <Flex isColumn={true} position={"center"}>
                 {

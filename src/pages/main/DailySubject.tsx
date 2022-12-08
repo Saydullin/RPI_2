@@ -21,7 +21,7 @@ function DailySubject() {
             <Container>
                 <BoldTitle>Poet of the day</BoldTitle>
                 <Space width={0} height={40} />
-                <PreviewPoet id={0} poet={poetsList[randId]} />
+                <PreviewPoet id={randId} poet={poetsList[randId]} />
                 <Space width={0} height={40} />
                 <Flex isColumn={false} position={"center"}>
                     <Link to={`/poet/${randId}`}>

@@ -6,16 +6,17 @@ import {
 import searchIcon from "../assets/img/search.svg"
 
 interface SearchProps {
-    placeholder: string
+    placeholder: string,
+    onEdit: (text: string) => void
 }
 
-export default function SearchWidget({ placeholder }: SearchProps) {
+export default function SearchWidget({ placeholder, onEdit }: SearchProps) {
 
     return (
         <Flex isColumn={false} position={"start"}>
             <Icon src={searchIcon} />
             <Space width={10} height={0} />
-            <input type={"text"} placeholder={placeholder} />
+            <input type={"text"} onChange={(e) => onEdit(e.target.value)} placeholder={placeholder} />
         </Flex>
     )
 }

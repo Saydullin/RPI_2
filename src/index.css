@@ -38,6 +38,28 @@
   }
 }
 
+@keyframes in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @font-face {
   font-family: "SourceSansPro-Regular";
   src: url(../public/fonts/SourceSansPro-Regular.ttf);
@@ -51,6 +73,14 @@
 @font-face {
   font-family: "SourceSansPro-Black";
   src: url(../public/fonts/SourceSansPro-Black.ttf);
+}
+
+.in-left {
+  animation: in-left .3s ease-in-out;
+}
+
+.in-right {
+  animation: in-right .3s ease-in-out;
 }
 
 body {
@@ -209,7 +239,12 @@ code {
 }
 
 .poet_slide_image {
-  height: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.poet_slide_image_full {
+  height: 450px;
   object-fit: cover;
 }
 

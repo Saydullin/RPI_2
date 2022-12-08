@@ -3,10 +3,11 @@ import { Carousel } from 'react-responsive-carousel'
 import PoetGalleryType from "../../data/types/PoetGallery"
 
 interface PoetGalleryProps {
-    gallery: PoetGalleryType
+    gallery: PoetGalleryType,
+    isFull: boolean
 }
 
-function PoetImageGallery({ gallery }: PoetGalleryProps) {
+function PoetImageGallery({ gallery, isFull }: PoetGalleryProps) {
 
     return (
         <Carousel
@@ -20,12 +21,12 @@ function PoetImageGallery({ gallery }: PoetGalleryProps) {
             interval={2500}
             transitionTime={400}
             className="rounded cp"
-            width={300}>
+            width={isFull ? 600 : 400}>
                 {
                     gallery.map(({ src, alt }) => {
                         return (
                             <div>
-                                <img src={src} alt={alt} className="poet_slide_image" />
+                                <img src={src} alt={alt} className={isFull ? "poet_slide_image_full" : "poet_slide_image"} />
                             </div>
                         )
                     })

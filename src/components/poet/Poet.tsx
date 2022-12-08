@@ -16,7 +16,7 @@ function Poet({ poet }: PoetProps) {
     return (
         <Flex isColumn={true} position={"center"}>
             <Space width={0} height={50} />
-            <PoetImageGallery gallery={poet.images} />
+            <PoetImageGallery isFull={true} gallery={poet.images} />
             <PoetInfo poet={poet} />
             <Space width={0} height={100} />
             <PoetVerticleTimeLine biography={poet.biography} />
