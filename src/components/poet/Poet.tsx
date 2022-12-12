@@ -1,4 +1,5 @@
 import PoetType from "../../data/types/PoetType"
+import { useTranslation } from "react-i18next"
 import {
     BoldTitle,
     Flex,
@@ -14,7 +15,7 @@ interface PoetProps {
 }
 
 function Poet({ poet }: PoetProps) {
-
+    const { t } = useTranslation()
     window.scrollTo(0, 0)
 
     return (
@@ -25,7 +26,7 @@ function Poet({ poet }: PoetProps) {
             <Space width={0} height={100} />
             <PoetVerticleTimeLine biography={poet.biography} />
             <Space width={0} height={50} />
-            <BoldTitle>Map</BoldTitle>
+            <BoldTitle>{t("map")}</BoldTitle>
             <Space width={0} height={20} />
             <div className="iframe-container">
                 <iframe
@@ -41,7 +42,7 @@ function Poet({ poet }: PoetProps) {
                 <Space width={0} height={50} />
             </div>
             <Space width={0} height={50} />
-            <BoldTitle>YouTube Video</BoldTitle>
+            <BoldTitle>{t("yt_video")}</BoldTitle>
             <Space width={0} height={20} />
             <div className="iframe-container">
                 <iframe

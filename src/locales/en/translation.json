@@ -1,3 +1,15 @@
 {
-    "test_o": "Test"
+    "test_o": "Test",
+    "what_fav_poet": "What is your favourite poet?",
+    "what_fav_poet_caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corrupti voluptas, ipsum eveniet tenetur excepturi odit recusandae laboriosam atque numquam fuga sed, hic, quas nostrum? Explicabo consequatur odit dicta tempore",
+    "poet_of_the_day": "Poet of the day",
+    "developers": "Developers",
+    "all_rights_deserved": "All Rights Reserved",
+    "all_poets": "All Poets",
+    "about": "About",
+    "github": "GitHub",
+    "search_poets_hint": "Search poet",
+    "poets_list": "Poets List",
+    "map": "Map",
+    "yt_video": "YouTube Video"
 }

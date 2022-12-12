@@ -5,6 +5,7 @@ import { PreviewPoet } from "../../components/poet/PreviewPoet"
 import SearchWidget from "../../components/SearchWidget"
 import { poets } from "../../data/ru/poetsData"
 import PoetType from "../../data/types/PoetType"
+import { useTranslation } from "react-i18next"
 import {
     Container,
     Flex,
@@ -13,6 +14,7 @@ import {
 } from "../../styles/Styles"
 
 function PoetsListPage() {
+    const { t } = useTranslation()
     window.scrollTo(0, 0)
     const [poetsList, setPoets] = useState<PoetType[]>(poets)
 
@@ -26,8 +28,8 @@ function PoetsListPage() {
             <Header />
             <Container className="in-left">
                 <Flex isColumn={false} position={"space-between"} gap={20} style={{padding: "10px"}}>
-                    <Title>Poets List</Title>
-                    <SearchWidget onEdit={onSearch} placeholder="Search poet" />
+                    <Title>{t("poets_list")}</Title>
+                    <SearchWidget onEdit={onSearch} placeholder={t("search_poets_hint")} />
                 </Flex>
                 <Flex isColumn={true} position={"center"}>
                     {

@@ -1,5 +1,17 @@
 {
-    "test_o": "Тест"
+    "test_o": "Тест",
+    "what_fav_poet": "Какой у вас любимый поэт?",
+    "what_fav_poet_caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corrupti voluptas, ipsum eveniet tenetur excepturi odit recusandae laboriosam atque numquam fuga sed, hic, quas nostrum? Explicabo consequatur odit dicta tempore",
+    "poet_of_the_day": "Поэт дня",
+    "developers": "Разработчики",
+    "all_rights_deserved": "Все права защищены",
+    "all_poets": "Все поэты",
+    "about": "Про нас",
+    "github": "GitHub",
+    "search_poets_hint": "Поиск поэтов",
+    "poets_list": "Список поэтов",
+    "map": "Карта",
+    "yt_video": "YouTube Видео"
 }
 
 

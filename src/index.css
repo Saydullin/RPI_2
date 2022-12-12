@@ -25,6 +25,8 @@
   --font_size_big: 22px;
   --font_size_medium: 18px;
   --font_size_normal: 16px;
+
+  --adaptive_links: 780px;
 }
 
 #root {
@@ -259,6 +261,7 @@ code {
 
 .cp {
   cursor: pointer;
+  user-select: none;
 }
 
 .hero_bg:after {
@@ -341,6 +344,4 @@ code {
   height: 100%;
 }
 
-@media (max-width: 680px) {
-  
-}
+

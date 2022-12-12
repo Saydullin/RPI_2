@@ -7,9 +7,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import "./i18n/i18n";
 import PoetPage from './pages/poets/PoetPage'
 import PoetsListPage from './pages/poets/PoetsListPage'
+
+import "./i18n";
 
 const router = createBrowserRouter([
   {

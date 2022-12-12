@@ -7,7 +7,7 @@ const Text = styled("div")`
 
 const Container = styled("div")`
     max-width: 1270px;
-    width: 100%;
+    width: inherit;
     padding: 10px 15px;
     margin: 0 auto;
     height: 100%;
@@ -99,7 +99,7 @@ const NavigateMenu = styled("div")<{isOpen: boolean | undefined}>`
     ${props => props.isOpen == undefined && "transform: translate(100%) !important;" }
     animation: ${props => (props.isOpen ? "slide-left" : "slide-right")} .2s ease-out forwards;
     min-width: 50vw;
-    max-width: 90vw;
+    max-width: 95vw;
     overflow: hidden;
     padding: 20px;
     background: #fff;
@@ -107,12 +107,12 @@ const NavigateMenu = styled("div")<{isOpen: boolean | undefined}>`
 `
 
 const LinksAdaptive = styled("div")`
-    @media (min-width: 680px) {
+    @media (min-width: 780px) {
         ${Menu} {
             display: none;
         }
     }
-    @media (max-width: 680px) {
+    @media (max-width: 780px) {
         ${Links} {
             display: none;
         }

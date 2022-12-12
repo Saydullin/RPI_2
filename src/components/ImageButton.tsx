@@ -9,7 +9,7 @@ interface ImageButtonProps {
 export default function ImageButton({ icon, title, onClick }: ImageButtonProps) {
 
     return (
-        <Flex onClick={onClick} isColumn={false} position={"center"}>
+        <Flex onClick={onClick} isColumn={false} position={"center"} gap={5} className="cp">
             {icon && <Icon src={icon} />}
             {title && <span>{title}</span>}
         </Flex>

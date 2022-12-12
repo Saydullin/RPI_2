@@ -1,6 +1,7 @@
 import { PreviewPoet } from "../../components/poet/PreviewPoet"
 import { poets } from "../../data/ru/poetsData"
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 import {
     BoldTitle,
     Container,
@@ -12,14 +13,14 @@ import {
 } from "../../styles/Styles"
 
 function DailySubject() {
-
+    const { t } = useTranslation()
     const poetsList = poets
     const randId = Math.floor(Math.random() * poetsList.length)
 
     return (
         <Section className={"h"} isFullScreen={false} isPadding={true}>
             <Container>
-                <BoldTitle>Poet of the day</BoldTitle>
+                <BoldTitle>{t("poet_of_the_day")}</BoldTitle>
                 <Space width={0} height={40} />
                 <PreviewPoet id={randId} poet={poetsList[randId]} />
                 <Space width={0} height={40} />
