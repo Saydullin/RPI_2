@@ -16,11 +16,16 @@ const Container = styled("div")`
 const Section = styled("div")<
     {
         isFullScreen: boolean,
-        isPadding: boolean
+        isPadding: boolean,
+        bg?: string
     }>`
     min-height: ${props => (props.isFullScreen ? "100vh" : "auto")};
     padding: ${props => (props.isPadding ? "20px" : "0px ")};
     animation: fade-in .3s ease-in-out;
+    background-image: url(${props => props.bg});
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 `
 
 const BigIcon = styled("img")`
@@ -58,6 +63,7 @@ const Flex = styled("div")<{
     align-items: center;
     justify-content: ${props => (props.position || "center")};
     flex-wrap: wrap;
+    height: 100%;
     flex-direction: ${props => (props.isColumn ? "column" : "row")};
     gap: ${props => (props.gap || 0)}px;
 `
