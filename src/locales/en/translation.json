@@ -1,7 +1,7 @@
 {
     "test_o": "Test",
     "what_fav_poet": "What is your favourite poet?",
-    "what_fav_poet_caption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corrupti voluptas, ipsum eveniet tenetur excepturi odit recusandae laboriosam atque numquam fuga sed, hic, quas nostrum? Explicabo consequatur odit dicta tempore",
+    "what_fav_poet_caption": "The Wiki Poets portal provides a collection of Belarusian poets. The portal has localization in English and Russian. The portal sources are located at the link in the github.",
     "poet_of_the_day": "Poet of the day",
     "developers": "Developers",
     "all_rights_deserved": "All Rights Reserved",

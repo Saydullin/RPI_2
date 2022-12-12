@@ -28,7 +28,7 @@ function Poet({ poet }: PoetProps) {
             <Space width={0} height={50} />
             <BoldTitle>{t("map")}</BoldTitle>
             <Space width={0} height={20} />
-            <div className="iframe-container">
+            <div className="iframe-container rounded">
                 <iframe
                     width="600"
                     height="500"
@@ -44,7 +44,7 @@ function Poet({ poet }: PoetProps) {
             <Space width={0} height={50} />
             <BoldTitle>{t("yt_video")}</BoldTitle>
             <Space width={0} height={20} />
-            <div className="iframe-container">
+            <div className="iframe-container rounded">
                 <iframe
                     width="600"
                     height="315"

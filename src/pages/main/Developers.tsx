@@ -1,5 +1,6 @@
 import Developer from "../../components/developer/Developer"
-import { developersData } from "../../data/ru/developersData"
+import { developersData as developersRU } from "../../data/ru/developersData"
+import { developersData as developersEN } from "../../data/en/developersData"
 import { useTranslation } from "react-i18next"
 import {
     Section,
@@ -10,9 +11,9 @@ import {
 } from "../../styles/Styles"
 
 function Developers() {
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
 
-    const developersList = developersData
+    const developersList = i18n.language == "ru" ? developersRU : developersEN
 
     return (
         <Section isFullScreen={false} isPadding={true}>

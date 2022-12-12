@@ -3,7 +3,8 @@ import Footer from "../../components/Footer"
 import { Header } from "../../components/Header"
 import { PreviewPoet } from "../../components/poet/PreviewPoet"
 import SearchWidget from "../../components/SearchWidget"
-import { poets } from "../../data/ru/poetsData"
+import { poets as poetsRU } from "../../data/ru/poetsData"
+import { poets as poetsEN } from "../../data/en/poetsData"
 import PoetType from "../../data/types/PoetType"
 import { useTranslation } from "react-i18next"
 import {
@@ -14,8 +15,9 @@ import {
 } from "../../styles/Styles"
 
 function PoetsListPage() {
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
     window.scrollTo(0, 0)
+    const poets = i18n.language == "ru" ? poetsRU : poetsEN
     const [poetsList, setPoets] = useState<PoetType[]>(poets)
 
     const onSearch = (searchText: string) => {

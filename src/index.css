@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   outline: none;
+  box-sizing: border-box;
 }
 
 :root {
@@ -168,7 +169,7 @@ img {
 a {
   color: var(--link_color);
   font-family: var(--regular_font);
-  font-size: 20px;
+  font-size: 18px;
   padding: 5px 10px;
   border-radius: calc(var(--border_radius) / 2);
   background: transparent;

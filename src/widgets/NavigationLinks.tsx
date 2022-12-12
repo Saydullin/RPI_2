@@ -26,7 +26,6 @@ function NavigationLinks({ ...props }) {
         <LinksAdaptive {...props}>
             <Links space={20}>
                 <Link to="/RPI_2/poets">{t("all_poets")}</Link>
-                <Link to="/RPI_2/about">{t("about")}</Link>
                 <Link to="/RPI_2/developers">{t("developers")}</Link>
                 <Link to="/RPI_2/github">{t("github")}</Link>
                 <Space width={20} height={0} />
@@ -39,7 +38,6 @@ function NavigationLinks({ ...props }) {
                         <Space width={0} height={50} />
                         <Flex isColumn={true} position={"center"} gap={20}>
                             <Link to="/RPI_2/poets">{t("all_poets")}</Link>
-                            <Link to="/RPI_2/about">{t("about")}</Link>
                             <Link to="/RPI_2/developers">{t("developers")}</Link>
                             <Link to="/RPI_2/github">{t("github")}</Link>
                             <Space width={20} height={0} />

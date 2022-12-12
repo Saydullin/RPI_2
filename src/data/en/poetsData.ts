@@ -36,7 +36,7 @@ const poets: {
             death: 1956,
         },
         profileImage: {
-            src: "img/poet_1.jpg",
+            src: "/RPI_2/img/poet_1.jpg",
             alt: "Yakub Kolas"
         },
         locationCoordinates: {
@@ -46,15 +46,15 @@ const poets: {
         },
         images: [
             {
-                src: "img/poet_1_slide1.jpg",
+                src: "/RPI_2/img/poets/poet_1_slide1.jpg",
                 alt: "Yakub Kolas"
             },
             {
-                src: "img/poet_1_slide2.jpg",
+                src: "/RPI_2/img/poets/poet_1_slide2.jpg",
                 alt: "Yakub Kolas"
             },
             {
-                src: "img/poet_1_slide3.jpg",
+                src: "/RPI_2/img/poets/poet_1_slide3.jpg",
                 alt: "Yakub Kolas"
             },
         ],

@@ -17,9 +17,9 @@ const developersData: {
         id: 0,
         name: "Saydullin",
         lastName: "",
-        description: "Студент БГУИР, 2 курс",
+        description: "BSUIR Student, 2 course",
         githubLink: "https://github.com/Saydullin",
-        yearsOld: "20 лет",
+        yearsOld: "20 years old",
         profileImage: {
             src: SaydullinPicture,
             alt: "Saydullin"
@@ -29,9 +29,9 @@ const developersData: {
         id: 1,
         name: "Павел",
         lastName: "Романко",
-        description: "Студент БГУИР, 2 курс",
+        description: "BSUIR Student, 2 course",
         githubLink: "https://github.com/PavelRomanko",
-        yearsOld: "19 лет",
+        yearsOld: "19 years old",
         profileImage: {
             src: PavelPicture,
             alt: "Pavel"

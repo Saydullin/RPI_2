@@ -1,5 +1,6 @@
 import { PreviewPoet } from "../../components/poet/PreviewPoet"
-import { poets } from "../../data/ru/poetsData"
+import { poets as poetsRU } from "../../data/ru/poetsData"
+import { poets as poetsEN } from "../../data/en/poetsData"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import {
@@ -13,8 +14,8 @@ import {
 } from "../../styles/Styles"
 
 function DailySubject() {
-    const { t } = useTranslation()
-    const poetsList = poets
+    const { t, i18n } = useTranslation()
+    const poetsList = i18n.language == "ru" ? poetsRU : poetsEN
     const randId = Math.floor(Math.random() * poetsList.length)
 
     return (

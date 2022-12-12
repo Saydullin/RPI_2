@@ -7,7 +7,7 @@ const Text = styled("div")`
 
 const Container = styled("div")`
     max-width: 1270px;
-    width: inherit;
+    width: 100%;
     padding: 10px 15px;
     margin: 0 auto;
     height: 100%;
