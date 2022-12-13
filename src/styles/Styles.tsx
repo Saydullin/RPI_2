@@ -63,7 +63,7 @@ const Flex = styled("div")<{
     align-items: center;
     justify-content: ${props => (props.position || "center")};
     flex-wrap: wrap;
-    height: 100%;
+    height: inherit;
     flex-direction: ${props => (props.isColumn ? "column" : "row")};
     gap: ${props => (props.gap || 0)}px;
 `

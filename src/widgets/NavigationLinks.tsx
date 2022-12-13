@@ -36,13 +36,15 @@ function NavigationLinks({ ...props }) {
                 <SlideMenu isOpen={isMenuOpen} onClick={onMenuClick}>
                     <NavigateMenu isOpen={isMenuOpen}>
                         <Space width={0} height={50} />
-                        <Flex isColumn={true} position={"center"} gap={20}>
-                            <Link to="/RPI_2/poets">{t("all_poets")}</Link>
-                            <Link to="/RPI_2/developers">{t("developers")}</Link>
-                            <a href="https://github.com/Saydullin/RPI_2" target={"_blank"}>{t("github")}</a>
-                            <Space width={20} height={0} />
-                            <LanguageSwitch />
-                        </Flex>
+                        <div>
+                            <Flex isColumn={true} position={"center"} gap={20}>
+                                <Link to="/RPI_2/poets">{t("all_poets")}</Link>
+                                <Link to="/RPI_2/developers">{t("developers")}</Link>
+                                <a href="https://github.com/Saydullin/RPI_2" target={"_blank"}>{t("github")}</a>
+                                <Space width={20} height={0} />
+                                <LanguageSwitch />
+                            </Flex>
+                        </div>
                     </NavigateMenu>
                 </SlideMenu>
             </Menu>
